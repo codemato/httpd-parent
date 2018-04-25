@@ -34,7 +34,7 @@ EXPOSE 80
 RUN rm -rf /run/httpd && mkdir /run/httpd
 
 # Run as the root user
-USER root 7
+USER root
 
 # Launch apache daemon
 CMD /usr/sbin/apachectl -DFOREGROUND
